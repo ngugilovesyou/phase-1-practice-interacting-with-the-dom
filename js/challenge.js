@@ -30,17 +30,11 @@ function togglePause () {
     if (paused) {
         paused = false;
         startCounter();
-        pause.innerText = 'pause';
-        minus.disabled = false;
-        plus.disabled = false;
-        heart.disabled = false;
+        pause.innerText = 'pause'
     } else {
         paused = true;
         stopCounter();
         pause.innerText = 'resume';
-        minus.disabled = true;
-        plus.disabled = true;
-        heart.disabled = true;
     }
 };
 minus.addEventListener('click', () => {
